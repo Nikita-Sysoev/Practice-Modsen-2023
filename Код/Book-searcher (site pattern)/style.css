@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+header{
+  background-image: url(./src/header-background.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  box-shadow: 0 -10px 10px 10px #000;
+  color: #fff;
+  font-size: 16pt;
+  padding: 10px;
+  z-index: 1;
+}
+header > h1{
+  font-size: 28pt;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+header > form{
+  text-align: center;
+}
+header > form input, header > form select{
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+  margin: 0;
+  padding: 4px 8px;
+}
+header input[type='input']{
+  max-width: 500px;
+  min-width: 280px;
+  width: 50%;
+}
+header input[type='submit']{
+  background-color: transparent;
+  background-image: url(./src/search-icon.svg);
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-left: -34px;
+  height: 34px;
+  width: 34px;
+}
+header input[type='submit']:hover{
+  background-image: url(./src/search-icon-hover.svg);
+}
+header select{
+  cursor: pointer;
+}
+header form div:last-child{
+  margin-top: 10px;
+  line-height: 2;
+}
+header form div:last-child > nobr{
+  margin: 0 15px;
+}
+
+
+
+main{
+  flex: 1;
+  overflow-y: auto;
+  position: relative;
+}
+
+#results-count{
+  margin-top: 20px;
+  text-align: center;  
+}
+
+#books{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+#books > .book-card{
+  background-color: #eee;
+  border-radius: 10px;
+  border-style: none;
+  margin: 10px;
+  min-width: 240px;
+  padding: 20px;
+  transition: 0.5s;
+  width: 300px;
+}
+#books > .book-card:hover{
+  box-shadow: 0 0 10px 0 #aaa;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+#books > .book-card img{
+  margin-bottom: 5px;
+  width: 100%;
+}
+#books > .book-card > div{
+  margin-top: 5px;
+}
+#books > .book-card .category{
+  color: #757575;
+  text-decoration: underline;
+}
+#books > .book-card .name{
+  font-weight: bold;
+}
+#books > .book-card .author{
+  color: #757575;
+}
+
+
+
+/*  */
+
+
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.book-cover{
+  align-items: center;
+  background-color: #dbdbdb;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  min-width: 280px;
+  padding: 50px;
+}
+#book-cover{
+  max-width: 100%;
+}
+.wrapper > div.book-information{
+  flex: 2;
+  padding: 40px;
+}
+
+.book-information > div:not(:last-child){
+  margin-bottom: 10px;
+}
+.book-information > .category{
+  color: #878787;
+}
+.book-information > .name{
+  font-weight: bold;
+  font-size: 20pt;
+}
+.book-information > .author{
+  text-decoration: underline;
+  color: #878787;
+}
+.book-information > .description{
+  padding: 10px;
+  border: 2px solid #878787;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  main{
+    overflow-y:unset;
+  }
+  .wrapper{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .book-cover{
+    padding: 20px;
+  }
+  .wrapper > div.book-information{
+    padding: 20px;
+  }
+}

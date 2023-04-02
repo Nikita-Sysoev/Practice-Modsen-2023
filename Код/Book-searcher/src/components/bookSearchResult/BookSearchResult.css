@@ -1,0 +1,12 @@
+.results-count{
+  margin-top: 20px;
+  text-align: center;  
+}
+
+.books-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}

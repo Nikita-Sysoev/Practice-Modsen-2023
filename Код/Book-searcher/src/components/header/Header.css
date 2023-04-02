@@ -1,0 +1,56 @@
+header{
+    background-image: url(./img/header-background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    box-shadow: 0 -10px 10px 10px #000;
+    color: #fff;
+    font-size: 16pt;
+    padding: 10px;
+    z-index: 1;
+  }
+  header > h1{
+    font-size: 28pt;
+    margin: 0 0 15px 0;
+    text-align: center;
+  }
+  header > form{
+    text-align: center;
+  }
+  header > form input, 
+  header > form select{
+    border: none;
+    border-radius: 5px;
+    font-size: inherit;
+    margin: 0;
+    padding: 4px 8px;
+  }
+  header > form input[type='input']{
+    max-width: 500px;
+    min-width: 280px;
+    width: 50%;
+  }
+  header > form input[type='submit']{
+    background-color: transparent;
+    background-image: url(./img/search-icon.svg);
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -34px;
+    height: 34px;
+    width: 34px;
+  }
+  header > form input[type='submit']:hover{
+    background-image: url(./img/search-icon-hover.svg);
+  }
+  header select{
+    cursor: pointer;
+  }
+  header > form > div:last-child{
+    margin-top: 10px;
+    line-height: 2;
+  }
+  header > form > div:last-child > nobr{
+    margin: 0 15px;
+  }
