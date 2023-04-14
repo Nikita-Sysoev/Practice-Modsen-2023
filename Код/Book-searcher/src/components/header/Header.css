@@ -28,7 +28,7 @@ header{
   header > form input[type='input']{
     max-width: 500px;
     min-width: 280px;
-    width: 50%;
+    width: calc(100% - 24px);
   }
   header > form input[type='submit']{
     background-color: transparent;

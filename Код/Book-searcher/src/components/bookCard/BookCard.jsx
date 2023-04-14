@@ -1,12 +1,16 @@
 import './BookCard.css';
 
 export function BookCard(props){
+  const lol = () => props.bookInfoFunction(props.id);
+  
   return(
-    <div class="book-card">
-      <img src="" alt="Book image" />
-      <div class="category">{props.category}</div>
-      <div class="name">{props.name}</div>
-      <div class="author">{props.author}</div>
+    <div className="book-card" onClick={lol}>
+      <img src={props.imageLink} alt="Book image" />
+      <div className="info-container">
+        <span className="category">{props.category}</span>
+        <span className="name">{props.name}</span>
+        <span className="author">{props.author}</span>
+      </div>
     </div>
   );
 }

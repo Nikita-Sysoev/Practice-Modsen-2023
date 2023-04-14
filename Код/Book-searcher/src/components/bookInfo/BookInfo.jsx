@@ -1,17 +1,17 @@
 import "./BookInfo.css";
 
-export function BookInfo(){
+export function BookInfo(props){
   return(
-    <div class="book-info">
-      <div class="book-cover-container">
-        <img class="book-cover" src="" alt="Book image" />
+    <div className="book-info">
+      <div className="book-cover-container">
+        <img className="book-cover" src={props.bookInfo.imageLink} alt="Book image" />
       </div>
 
-      <div class="book-info-container">
-        <div class="category">Category/...</div>
-        <div class="name">Name</div>
-        <div class="author">Author</div>
-        <div class="description">Description</div>
+      <div className="book-info-container">
+        <div className="category">{props.bookInfo.category}</div>
+        <div className="name">{props.bookInfo.name}</div>
+        <div className="author">{props.bookInfo.author}</div>
+        <div className="description">{props.bookInfo.description}</div>
       </div>
     </div>
   );

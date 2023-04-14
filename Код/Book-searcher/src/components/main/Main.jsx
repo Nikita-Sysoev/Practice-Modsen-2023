@@ -1,12 +1,13 @@
 import './Main.css';
 
-import { BookSearchResult } from '../bookSearchResult/BookSearchResult.jsx';
+import { SearchResult } from '../searchResult/SearchResult';
 import { BookInfo } from '../bookInfo/BookInfo.jsx';
 
-export function Main() {
+export function Main(props) {
   return(
     <main>
-      {true ? <BookSearchResult /> : <BookInfo />}
+      {props.searchResult && <SearchResult bookInfoFunction={props.bookInfoFunction} searchResult={props.searchResult} />}
+      {props.bookInfo && <BookInfo bookInfo={props.bookInfo} />}
     </main>
   );
 }

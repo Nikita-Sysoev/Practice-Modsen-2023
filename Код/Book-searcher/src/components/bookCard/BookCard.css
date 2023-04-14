@@ -2,6 +2,9 @@
   background-color: #eee;
   border-radius: 10px;
   border-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 10px;
   min-width: 240px;
   padding: 20px;
@@ -17,16 +20,24 @@
   margin-bottom: 5px;
   width: 100%;
 }
-.book-card > div{
-  margin-top: 5px;
+.book-card > .info-container{
+  
 }
-.book-card > div.category{
+.book-card  > .info-container > span{
+  display: block;
+  min-height: 14pt;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.book-card > .info-container > span.category{
   color: #757575;
   text-decoration: underline;
 }
-.book-card > div.name{
+.book-card > .info-container > span.name{
   font-weight: bold;
 }
-.book-card > div.author{
+.book-card > .info-container > span.author{
   color: #757575;
 }

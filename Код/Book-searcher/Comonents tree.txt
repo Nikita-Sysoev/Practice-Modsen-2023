@@ -1,0 +1,62 @@
+App
+├─> Header
+|   └─0 BookSearchForm
+└─> Main
+    ├─> BookInfo
+    └─> SearchResult
+        └─> BookCardsGrid
+            └─> BookCard
+
+
+
+App{
+  header: {},
+  main: {}, 
+}
+
+Header = {
+  serachFunction
+}
+
+Main = {
+  searchResult
+  book
+}
+
+searchResult = {
+  totalItems
+  books
+}
+
+book = {
+  name
+  author
+  category
+  description
+  imageLink
+}
+
+
+////////////////////////////////////
+
+
+const [state, setState] = useState(
+  {
+    header: {
+      serachFunction: () => 0,
+    },
+    main: {
+      searchResult: {
+        totalItems: 0,
+        books: [],
+      },
+      bookInfo:{
+        name: 'name',
+        author: 'author',
+        category: 'category',
+        description: 'description',
+        imageLink: '',
+      }
+    },
+  }
+);

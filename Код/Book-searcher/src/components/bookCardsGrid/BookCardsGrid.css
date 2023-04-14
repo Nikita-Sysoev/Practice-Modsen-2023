@@ -1,9 +1,4 @@
-.results-count{
-  margin-top: 20px;
-  text-align: center;  
-}
-
-.books-container{
+.bookCardsGrid{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
