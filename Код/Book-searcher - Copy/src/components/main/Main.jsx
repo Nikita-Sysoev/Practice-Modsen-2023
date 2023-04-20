@@ -1,7 +1,7 @@
 import './Main.css';
 
-import { SearchResult } from 'components/searchResult/SearchResult';
-import { BookInfo } from 'components/bookInfo/BookInfo.jsx';
+import { SearchResult } from '../searchResult/SearchResult';
+import { BookInfo } from '../bookInfo/BookInfo.jsx';
 
 export function Main(props) {
   return(

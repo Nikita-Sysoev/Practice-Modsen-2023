@@ -1,6 +1,6 @@
 import './SearchResult.css';
 
-import { BookCardsGrid } from 'components/bookCardsGrid/BookCardsGrid.jsx';
+import { BookCardsGrid } from '../bookCardsGrid/BookCardsGrid.jsx';
 
 export function SearchResult(props) {
   return(

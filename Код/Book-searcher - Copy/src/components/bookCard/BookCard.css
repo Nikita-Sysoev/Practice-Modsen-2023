@@ -1,0 +1,43 @@
+.book-card{
+  background-color: #eee;
+  border-radius: 10px;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  min-width: 240px;
+  padding: 20px;
+  transition: 0.5s;
+  width: 300px;
+}
+.book-card:hover{
+  box-shadow: 0 0 10px 0 #aaa;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.book-card > img{
+  margin-bottom: 5px;
+  width: 100%;
+}
+.book-card > .info-container{
+  
+}
+.book-card  > .info-container > span{
+  display: block;
+  min-height: 14pt;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.book-card > .info-container > span.category{
+  color: #757575;
+  text-decoration: underline;
+}
+.book-card > .info-container > span.name{
+  font-weight: bold;
+}
+.book-card > .info-container > span.author{
+  color: #757575;
+}

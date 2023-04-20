@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import { Header } from 'components/header/Header.jsx';
-import { Main } from 'components/main/Main.jsx';
-import GoogleBookAPIGet from 'api/GoogleBookAPI.js'
+import { Header } from './components/header/Header.jsx';
+import { Main } from './components/main/Main.jsx';
+import GoogleBookAPIGet from './GoogleBookAPI.js'
 
 export default function App(){
   const [header, setHeader] = useState(
